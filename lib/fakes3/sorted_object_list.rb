@@ -58,7 +58,7 @@ module FakeS3
     def list(options)
       marker = options[:marker]
       prefix = options[:prefix]
-      max_keys = options[:max_keys] || 1000
+      max_keys = options[:max_keys] || 1000000
       delimiter = options[:delimiter]
 
       ms = S3MatchSet.new

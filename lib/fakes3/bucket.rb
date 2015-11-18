@@ -41,7 +41,7 @@ module FakeS3
     def query_for_range(options)
       marker = options[:marker]
       prefix = options[:prefix]
-      max_keys = options[:max_keys] || 1000
+      max_keys = options[:max_keys] || 1000000
       delimiter = options[:delimiter]
 
       match_set = nil
